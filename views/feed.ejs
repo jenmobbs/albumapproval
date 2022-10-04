@@ -1,15 +1,27 @@
+<div class="hero min-h-screen bg-base-200">
+  <div class="hero-content text-center">
+    <div class="max-w-md">
+
 <%- include('partials/header') -%>
-  <div class="container">
-    <div class="row justify-content-center mt-5">
-      <ul class="row list-unstyled">
+  <div >
+    <div >
+      <ul >
         <% for(var i=0; i<posts.length; i++) {%>
-          <li class="col-6 justify-content-between mt-5">
+          <li >
             <a href="/post/<%= posts[i]._id%>">
               <img class="img-fluid" src="<%= posts[i].image%>">
             </a>
+
+            <div class="mt-5">
+              
+            
           </li>
         <% } %>
-        </ul>
+        </ul>       
+
     </div>
   </div>  
+    </div>
+  </div>
+</div>
 <%- include('partials/footer') -%>
